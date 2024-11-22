@@ -177,11 +177,72 @@ body {
     }
 }
 
+/* About Section */
+.about_section {
+    padding: 80px 20px;
+    background-color: #f7f7f7; 
+    text-align: center;
+}
+
+.about_title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.about_description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+.services_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service_card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.service_card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.service_card img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.service_card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service_card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
 /* Contact Section */
 .contact_section {
     padding: 80px 20px;
+    background-color: #eaf7f7; /* Fondo azul claro */
     text-align: center;
-    background-color: #f7f7f7;
 }
 
 .contact_taital {
@@ -246,22 +307,54 @@ body {
     transform: translateY(-2px);
 }
 
-@media (max-width: 768px) {
-    .contact_box {
-        padding: 30px;
-    }
-
-    .contact_taital {
-        font-size: 28px;
-    }
-
-    .send_bt a {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
+/* Agenda Section */
+.agenda_section {
+    padding: 80px 20px;
+    background-color: #f7f7f7; 
+    text-align: center;
 }
 
-/* Footer */
+.agenda_title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.agenda_description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.agenda_button {
+    margin-top: 20px;
+}
+
+.agenda_btn {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #15e4d0;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.agenda_btn:hover {
+    background-color: #84d8ff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Footer Section */
 .footer_section {
     background-color: #151515;
     padding: 40px 20px;
@@ -290,6 +383,20 @@ body {
     color: white;
     font-size: 20px;
     margin-bottom: 10px;
+}
+
+.footer_section .footer_contact {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.footer_section .footer_contact a {
+    color: #15e4d0;
+    text-decoration: none;
+}
+
+.footer_section .footer_contact a:hover {
+    color: #4bc5b8;
 }
 
 .footer_section .social_links {
